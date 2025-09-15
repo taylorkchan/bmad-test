@@ -1,0 +1,541 @@
+{
+  "meta": {
+    "name": "CareHub Web DS",
+    "version": "1.0.0",
+    "brand": "CareHub",
+    "description": "Design system for a responsive healthcare marketplace (web + mobile web). Mirrors the mobile app visuals while adapting to desktop grid and interactions.",
+    "license": "Internal",
+    "notes": "Drop `notes` fields if your token pipeline requires pure JSON."
+  },
+
+  "foundations": {
+    "breakpoints": {
+      "xs": 360,
+      "sm": 640,
+      "md": 768,
+      "lg": 1024,
+      "xl": 1280,
+      "2xl": 1536
+    },
+    "container": {
+      "padding": { "xs": 16, "sm": 20, "md": 24, "lg": 32, "xl": 40 },
+      "maxWidth": { "sm": 640, "md": 768, "lg": 1024, "xl": 1200, "2xl": 1320 }
+    },
+    "grid": {
+      "columns": {
+        "xs": 4,
+        "sm": 6,
+        "md": 8,
+        "lg": 12,
+        "xl": 12
+      },
+      "gutter": { "xs": 12, "sm": 16, "md": 20, "lg": 24, "xl": 24 }
+    },
+
+    "palette": {
+      "teal50": "#E6F6F3",
+      "teal100": "#C0EAE3",
+      "teal200": "#97DDD1",
+      "teal300": "#6BD0C0",
+      "teal400": "#3AC1AD",
+      "teal500": "#00A287",
+      "teal600": "#008C74",
+      "teal700": "#007663",
+      "teal800": "#005C4D",
+      "teal900": "#003B30",
+
+      "green500": "#34C759",
+      "red500": "#FF3B30",
+      "amber500": "#FFB020",
+
+      "blue600": "#2563EB",
+      "gray25": "#FCFCFD",
+      "gray50": "#F8FAFC",
+      "gray100": "#F2F4F7",
+      "gray200": "#E4E7EC",
+      "gray300": "#D0D5DD",
+      "gray400": "#98A2B3",
+      "gray500": "#667085",
+      "gray600": "#475467",
+      "gray700": "#344054",
+      "gray800": "#1D2939",
+      "gray900": "#0B1220",
+      "white": "#FFFFFF",
+      "black": "#000000"
+    },
+
+    "color": {
+      "modes": ["light", "dark"],
+      "semantic": {
+        "background": { "light": "{foundations.palette.white}", "dark": "#0E1116" },
+        "surface":    { "light": "{foundations.palette.white}", "dark": "#11161C" },
+        "subtle":     { "light": "{foundations.palette.gray50}", "dark": "#0B0F14" },
+
+        "text.primary":   { "light": "{foundations.palette.gray900}", "dark": "{foundations.palette.gray100}" },
+        "text.secondary": { "light": "{foundations.palette.gray600}", "dark": "{foundations.palette.gray400}" },
+        "text.muted":     { "light": "{foundations.palette.gray500}", "dark": "{foundations.palette.gray500}" },
+        "text.inverse":   { "light": "{foundations.palette.white}", "dark": "{foundations.palette.black}" },
+
+        "primary.DEFAULT": { "light": "{foundations.palette.teal500}", "dark": "{foundations.palette.teal400}" },
+        "primary.hover":   { "light": "{foundations.palette.teal600}", "dark": "{foundations.palette.teal300}" },
+        "primary.soft":    { "light": "{foundations.palette.teal50}",  "dark": "#062623" },
+
+        "info.DEFAULT":    { "light": "{foundations.palette.blue600}", "dark": "#409CFF" },
+        "success.DEFAULT": { "light": "{foundations.palette.green500}", "dark": "#2CCE5C" },
+        "warning.DEFAULT": { "light": "{foundations.palette.amber500}", "dark": "#FFC86B" },
+        "danger.DEFAULT":  { "light": "{foundations.palette.red500}",   "dark": "#FF6B60" },
+
+        "border.DEFAULT":  { "light": "{foundations.palette.gray300}", "dark": "#2A323C" },
+        "border.muted":    { "light": "{foundations.palette.gray200}", "dark": "#232A33" },
+        "placeholder":     { "light": "{foundations.palette.gray400}", "dark": "{foundations.palette.gray500}" },
+        "focusRing":       { "light": "rgba(0,162,135,0.35)",          "dark": "rgba(58,193,173,0.45)" }
+      }
+    },
+
+    "typography": {
+      "fontFamily": {
+        "sans": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+        "mono": "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
+      },
+      "weights": { "regular": 400, "medium": 500, "semibold": 600, "bold": 700 },
+      "scale": {
+        "display": { "size": 40, "lineHeight": 52, "weight": "bold", "tracking": -0.4 },
+        "h1":      { "size": 32, "lineHeight": 42, "weight": "bold", "tracking": -0.2 },
+        "h2":      { "size": 28, "lineHeight": 36, "weight": "semibold" },
+        "h3":      { "size": 22, "lineHeight": 30, "weight": "semibold" },
+        "h4":      { "size": 18, "lineHeight": 26, "weight": "semibold" },
+        "bodyLg":  { "size": 18, "lineHeight": 28, "weight": "regular" },
+        "body":    { "size": 16, "lineHeight": 24, "weight": "regular" },
+        "bodySm":  { "size": 14, "lineHeight": 20, "weight": "regular" },
+        "caption": { "size": 12, "lineHeight": 16, "weight": "regular" },
+        "overline":{ "size": 11, "lineHeight": 14, "weight": "medium", "case": "uppercase", "tracking": 0.8 }
+      },
+      "responsive": {
+        "xs": { "h1": { "size": 28, "lineHeight": 36 }, "h2": { "size": 24, "lineHeight": 32 } },
+        "lg": { "h1": { "size": 36, "lineHeight": 46 }, "h2": { "size": 30, "lineHeight": 40 } }
+      }
+    },
+
+    "spacing": { "0": 0, "px": 1, "1": 4, "2": 8, "3": 12, "4": 16, "5": 20, "6": 24, "7": 28, "8": 32, "10": 40, "12": 48, "16": 64, "20": 80 },
+    "radius":  { "sm": 6, "md": 10, "lg": 16, "xl": 24, "pill": 9999 },
+    "elevation": {
+      "0": "none",
+      "1": "0 1px 2px rgba(16,24,40,0.06)",
+      "2": "0 2px 8px rgba(16,24,40,0.08)",
+      "3": "0 6px 18px rgba(16,24,40,0.12)",
+      "4": "0 14px 40px rgba(16,24,40,0.16)"
+    },
+    "zIndex": { "base": 0, "header": 100, "overlay": 1000, "modal": 1100, "toast": 1200 },
+    "motion": {
+      "duration": { "fast": 120, "base": 180, "slow": 250, "dialog": 300 },
+      "easing": {
+        "inOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "out": "cubic-bezier(0, 0, 0.2, 1)",
+        "in": "cubic-bezier(0.4, 0, 1, 1)"
+      }
+    },
+    "icon": { "sizes": { "sm": 16, "md": 20, "lg": 24, "xl": 32 } },
+    "focus": {
+      "ring": { "width": 3, "color": "{foundations.color.semantic.focusRing}", "offset": 1 },
+      "notes": "Every interactive element MUST have a visible focus ring at all breakpoints."
+    }
+  },
+
+  "components": {
+    "Button": {
+      "sizes": {
+        "sm": { "height": 36, "px": 14, "text": "{foundations.typography.scale.bodySm}" },
+        "md": { "height": 44, "px": 18, "text": "{foundations.typography.scale.body}" },
+        "lg": { "height": 52, "px": 22, "text": "{foundations.typography.scale.bodyLg}" }
+      },
+      "radius": "{foundations.radius.lg}",
+      "fontWeight": "semibold",
+      "variants": {
+        "primary": {
+          "bg": "{foundations.color.semantic.primary.DEFAULT}",
+          "fg": "{foundations.color.semantic.text.inverse}",
+          "hoverBg": "{foundations.color.semantic.primary.hover}",
+          "border": "transparent",
+          "shadow": "{foundations.elevation.1}"
+        },
+        "secondary": {
+          "bg": "{foundations.color.semantic.subtle}",
+          "fg": "{foundations.color.semantic.text.primary}",
+          "hoverBg": "{foundations.palette.gray100}",
+          "border": "{foundations.color.semantic.border.muted}"
+        },
+        "ghost": {
+          "bg": "transparent",
+          "fg": "{foundations.color.semantic.primary.DEFAULT}",
+          "hoverBg": "{foundations.color.semantic.primary.soft}",
+          "border": "transparent"
+        },
+        "destructive": {
+          "bg": "{foundations.color.semantic.danger.DEFAULT}",
+          "fg": "{foundations.color.semantic.text.inverse}",
+          "hoverBg": "#FF5247",
+          "border": "transparent"
+        }
+      },
+      "states": {
+        "disabled": { "opacity": 0.5, "cursor": "not-allowed", "shadow": "none" },
+        "focus": { "ring": "{foundations.focus.ring}" },
+        "loading": { "spinnerSize": 16, "spinnerStroke": 2 }
+      }
+    },
+
+    "TextField": {
+      "height": 48,
+      "radius": "{foundations.radius.md}",
+      "paddingX": 14,
+      "bg": "{foundations.color.semantic.surface}",
+      "border": { "width": 1, "color": "{foundations.color.semantic.border.DEFAULT}" },
+      "placeholder": "{foundations.color.semantic.placeholder}",
+      "text": "{foundations.typography.scale.body}",
+      "iconLeading": { "size": "{foundations.icon.sizes.lg}", "gap": 10 },
+      "iconTrailing": { "size": "{foundations.icon.sizes.lg}", "gap": 10 },
+      "states": {
+        "hover": { "borderColor": "{foundations.palette.gray400}" },
+        "focus": { "borderColor": "{foundations.color.semantic.primary.DEFAULT}", "ring": "{foundations.focus.ring}" },
+        "error": { "borderColor": "{foundations.color.semantic.danger.DEFAULT}", "helperColor": "{foundations.color.semantic.danger.DEFAULT}" },
+        "success": { "borderColor": "{foundations.color.semantic.success.DEFAULT}" },
+        "disabled": { "bg": "{foundations.palette.gray100}", "text": "{foundations.palette.gray500}" }
+      }
+    },
+
+    "PasswordField": {
+      "extends": "TextField",
+      "trailingToggle": { "iconOn": "eye-off", "iconOff": "eye", "area": 40 }
+    },
+
+    "SearchField": {
+      "height": 44,
+      "radius": "{foundations.radius.lg}",
+      "bg": "{foundations.color.semantic.subtle}",
+      "paddingX": 16,
+      "icon": { "name": "search", "size": "{foundations.icon.sizes.lg}" }
+    },
+
+    "OTPInput": {
+      "box": { "size": 56, "radius": "{foundations.radius.md}", "border": "{foundations.color.semantic.border.DEFAULT}" },
+      "text": { "size": 20, "weight": "semibold" },
+      "gap": 12,
+      "states": {
+        "focus": { "borderColor": "{foundations.color.semantic.primary.DEFAULT}", "ring": "{foundations.focus.ring}" },
+        "error": { "borderColor": "{foundations.color.semantic.danger.DEFAULT}" }
+      }
+    },
+
+    "Checkbox": {
+      "size": 20,
+      "radius": 4,
+      "border": "{foundations.color.semantic.border.DEFAULT}",
+      "checkColor": "{foundations.color.semantic.text.inverse}",
+      "checkedBg": "{foundations.color.semantic.primary.DEFAULT}"
+    },
+
+    "Radio": {
+      "outer": 20,
+      "inner": 10,
+      "border": "{foundations.color.semantic.border.DEFAULT}",
+      "dot": "{foundations.color.semantic.primary.DEFAULT}"
+    },
+
+    "Switch": {
+      "track": { "width": 44, "height": 24, "radius": 16, "off": "{foundations.palette.gray300}", "on": "{foundations.color.semantic.primary.DEFAULT}" },
+      "thumb": { "size": 18, "shadow": "{foundations.elevation.1}" }
+    },
+
+    "Badge": {
+      "radius": 999,
+      "paddingX": 10,
+      "paddingY": 4,
+      "variants": {
+        "success": { "bg": "rgba(52,199,89,0.12)", "fg": "{foundations.color.semantic.success.DEFAULT}" },
+        "warning": { "bg": "rgba(255,176,32,0.14)", "fg": "{foundations.color.semantic.warning.DEFAULT}" },
+        "neutral": { "bg": "{foundations.color.semantic.subtle}", "fg": "{foundations.color.semantic.text.secondary}" }
+      }
+    },
+
+    "Card": {
+      "radius": "{foundations.radius.lg}",
+      "bg": "{foundations.color.semantic.surface}",
+      "shadow": "{foundations.elevation.2}",
+      "padding": 16,
+      "sections": { "mediaHeight": 140, "headerGap": 8, "contentGap": 8, "footerGap": 12 }
+    },
+
+    "ListItem": {
+      "avatar": { "size": 56, "radius": "{foundations.radius.lg}" },
+      "title": "{foundations.typography.scale.h4}",
+      "subtitle": "{foundations.typography.scale.bodySm}",
+      "meta": "{foundations.typography.scale.caption}",
+      "gap": 12
+    },
+
+    "Rating": {
+      "icon": "star",
+      "size": 16,
+      "color": "#FFD166",
+      "gap": 4
+    },
+
+    "Navbar": {
+      "height": 64,
+      "bg": "{foundations.color.semantic.surface}",
+      "borderBottom": "{foundations.color.semantic.border.muted}",
+      "items": { "gap": 16, "activeColor": "{foundations.color.semantic.primary.DEFAULT}" },
+      "breakpointCollapse": "md"
+    },
+
+    "Sidebar": {
+      "width": 264,
+      "bg": "{foundations.color.semantic.subtle}",
+      "borderRight": "{foundations.color.semantic.border.muted}",
+      "itemHeight": 44,
+      "iconSize": "{foundations.icon.sizes.lg}",
+      "collapseAt": "lg"
+    },
+
+    "Tabs": {
+      "variant": "underline",
+      "gap": 20,
+      "underline": { "height": 2, "active": "{foundations.color.semantic.primary.DEFAULT}", "rest": "{foundations.color.semantic.border.muted}" }
+    },
+
+    "Modal": {
+      "radius": "{foundations.radius.xl}",
+      "shadow": "{foundations.elevation.4}",
+      "maxWidth": { "xs": 360, "sm": 480, "md": 640 },
+      "padding": 24,
+      "backdrop": "rgba(2,6,12,0.56)",
+      "title": "{foundations.typography.scale.h3}",
+      "desc": "{foundations.typography.scale.body}",
+      "primaryAction": "Button.primary.md"
+    },
+
+    "Toast": {
+      "radius": "{foundations.radius.md}",
+      "shadow": "{foundations.elevation.3}",
+      "padding": 14,
+      "success": { "accent": "{foundations.color.semantic.success.DEFAULT}" },
+      "error":   { "accent": "{foundations.color.semantic.danger.DEFAULT}" }
+    },
+
+    "Pagination": {
+      "height": 36,
+      "radius": 8,
+      "gap": 6,
+      "active": {
+        "bg": "{foundations.color.semantic.primary.soft}",
+        "fg": "{foundations.color.semantic.primary.DEFAULT}"
+      }
+    },
+
+    "Table": {
+      "rowHeight": 56,
+      "header": { "bg": "{foundations.color.semantic.subtle}", "text": "{foundations.typography.scale.bodySm}" },
+      "divider": "{foundations.color.semantic.border.muted}",
+      "hoverBg": "{foundations.palette.gray50}"
+    },
+
+    "Stepper": {
+      "size": 28,
+      "line": 2,
+      "active": "{foundations.color.semantic.primary.DEFAULT}",
+      "complete": "{foundations.color.semantic.success.DEFAULT}",
+      "incomplete": "{foundations.color.semantic.border.DEFAULT}"
+    }
+  },
+
+  "icons": {
+    "map": {
+      "search": "magnifying-glass",
+      "email": "envelope",
+      "password": "lock",
+      "eye": "eye",
+      "eyeOff": "eye-slash",
+      "google": "logo-google",
+      "apple": "logo-apple",
+      "facebook": "logo-facebook",
+      "back": "arrow-left",
+      "doctor": "stethoscope",
+      "pharmacy": "capsule",
+      "hospital": "hospital",
+      "ambulance": "ambulance",
+      "location": "map-pin",
+      "phone": "phone",
+      "star": "star",
+      "bookmark": "bookmark",
+      "filter": "funnel",
+      "calendar": "calendar",
+      "bell": "bell"
+    }
+  },
+
+  "patterns": {
+    "auth": {
+      "notes": "Desktop: 2-column layout with brand panel; Mobile: single column.",
+      "desktop": {
+        "grid": { "columns": 12, "gutter": 24 },
+        "leftPanel": { "cols": 6, "bg": "{foundations.color.semantic.subtle}", "media": "illustration/doctor" },
+        "formPanel": { "cols": 6, "maxWidth": 440, "centered": true }
+      },
+      "mobile": { "stack": true, "padding": 20 },
+      "components": [
+        "TextField(email)",
+        "PasswordField",
+        "Button.primary.md(Login)",
+        "Button.ghost.md(Forgot Password)",
+        "Divider OR",
+        "Button.secondary.md(Sign in with Google)",
+        "Button.secondary.md(Sign in with Apple)",
+        "Button.secondary.md(Sign in with Facebook)"
+      ],
+      "validation": {
+        "errorPlacement": "belowField",
+        "errorStyle": "{components.TextField.states.error}",
+        "passwordRules": "min 8 chars, 1 number, 1 letter"
+      }
+    },
+
+    "forgotPassword": {
+      "steps": [
+        "selectChannel(email|phone)",
+        "enterIdentifier",
+        "verifyCode(OTPInput)",
+        "newPassword(PasswordField + confirm)",
+        "success(Modal or Toast + CTA Login)"
+      ]
+    },
+
+    "home": {
+      "hero": {
+        "titleStyle": "{foundations.typography.scale.h2}",
+        "search": "SearchField"
+      },
+      "quickLinks": {
+        "items": [
+          { "icon": "doctor", "label": "Doctor" },
+          { "icon": "pharmacy", "label": "Pharmacy" },
+          { "icon": "hospital", "label": "Hospital" },
+          { "icon": "ambulance", "label": "Ambulance" }
+        ],
+        "item": { "size": 84, "radius": "{foundations.radius.xl}", "bg": "{foundations.color.semantic.subtle}", "gap": 8 }
+      },
+      "banner": {
+        "card": { "bg": "{foundations.color.semantic.primary.soft}", "radius": "{foundations.radius.lg}", "mediaRight": true, "padding": 20 }
+      },
+      "topDoctors": {
+        "title": "Top Doctor",
+        "SeeAllLink": true,
+        "card": "DoctorCard.sm",
+        "carousel": { "gap": 16, "peek": 12, "arrowsDesktop": true, "dragMobile": true }
+      }
+    },
+
+    "listDoctors": {
+      "filters": {
+        "inline": [
+          { "type": "Segmented", "items": ["All", "Nearby", "Top Rated"] },
+          { "type": "Select", "label": "Specialty" },
+          { "type": "Select", "label": "Distance" },
+          { "type": "Select", "label": "Availability" }
+        ]
+      },
+      "grid": { "lgCols": 3, "mdCols": 2, "xsCols": 1, "gap": 20 },
+      "card": "DoctorCard.md",
+      "pagination": "Pagination"
+    }
+  },
+
+  "domainComponents": {
+    "DoctorCard": {
+      "common": {
+        "image": { "ratio": "4:3", "radius": "{foundations.radius.lg}" },
+        "nameStyle": "{foundations.typography.scale.h4}",
+        "specialtyStyle": "{foundations.typography.scale.bodySm}",
+        "metaStyle": "{foundations.typography.scale.caption}",
+        "rating": "Rating",
+        "distanceIcon": "location",
+        "cta": "Button.ghost.sm"
+      },
+      "sm": {
+        "card": { "width": 240, "padding": 12 },
+        "image": { "height": 120 },
+        "layout": "vertical"
+      },
+      "md": {
+        "card": { "width": 320, "padding": 16 },
+        "image": { "height": 160 },
+        "layout": "vertical"
+      },
+      "listRow": {
+        "card": { "padding": 16 },
+        "image": { "width": 120, "height": 90 },
+        "layout": "horizontal",
+        "contentGap": 12
+      },
+      "states": {
+        "hover": { "shadow": "{foundations.elevation.3}", "translateY": -2 },
+        "focus": { "ring": "{foundations.focus.ring}" }
+      }
+    }
+  },
+
+  "layouts": {
+    "AppShell": {
+      "header": "Navbar",
+      "sidebar": { "enabled": false, "lgEnabled": true },
+      "contentMaxWidth": "{foundations.container.maxWidth.xl}",
+      "footer": { "height": 64, "divider": "{foundations.color.semantic.border.muted}" }
+    },
+    "AuthPage": {
+      "uses": "patterns.auth",
+      "seo": { "title": "Login | CareHub", "desc": "Access your CareHub account" }
+    },
+    "HomePage": {
+      "sections": ["Navbar", "hero", "quickLinks", "banner", "topDoctors"],
+      "responsive": {
+        "xs": { "heroStack": true, "carousel": true },
+        "lg": { "heroInline": true }
+      }
+    },
+    "DoctorsPage": {
+      "sections": ["Filters", "Grid", "Pagination"],
+      "grid": "{patterns.listDoctors.grid}"
+    }
+  },
+
+  "contentStyles": {
+    "link": { "color": "{foundations.color.semantic.primary.DEFAULT}", "hoverColor": "{foundations.color.semantic.primary.hover}", "underline": true },
+    "helperText": { "size": 12, "color": "{foundations.color.semantic.text.muted}" },
+    "errorText": { "size": 12, "color": "{foundations.color.semantic.danger.DEFAULT}" }
+  },
+
+  "a11y": {
+    "contrastTargets": { "text": 4.5, "largeText": 3, "uiComponents": 3 },
+    "hitAreaMin": 44,
+    "keyboard": { "tabOrder": "logical-dom", "skipLink": true },
+    "motionReduce": { "respectPrefersReducedMotion": true, "disableParallax": true }
+  },
+
+  "tokensForDev": {
+    "tailwindHints": {
+      "primary": "#00A287",
+      "font": "Inter",
+      "rounded": 16,
+      "container": 1200
+    }
+  },
+
+  "sampleData": {
+    "doctor": {
+      "name": "Dr. Maria Elena",
+      "specialty": "Psychologist",
+      "rating": 4.9,
+      "distanceText": "1.5km away",
+      "avatar": "maria-elena.jpg"
+    }
+  }
+}

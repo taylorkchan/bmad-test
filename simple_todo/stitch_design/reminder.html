@@ -1,0 +1,146 @@
+<html><head>
+    <meta charset="utf-8"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+          --primary-color: #1173d4;
+          --secondary-color: #233648;
+          --background-color: #111a22;
+          --text-primary: #ffffff;
+          --text-secondary: #92adc9;
+        }
+    </style>
+    <style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-[var(--background-color)]">
+<div class="relative flex size-full min-h-screen flex-col dark justify-between group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+    <div class="flex-grow">
+        <header class="sticky top-0 z-10 flex items-center justify-between bg-[var(--background-color)] p-4 pb-2">
+            <button class="text-[var(--text-primary)]">
+                <span class="material-symbols-outlined text-3xl"> arrow_back_ios_new </span>
+            </button>
+            <h1 class="text-[var(--text-primary)] text-xl font-bold">Reminders</h1>
+            <div class="w-8"></div>
+        </header>
+        <main class="px-4">
+            <section class="py-5">
+                <h2 class="text-[var(--text-primary)] text-xl font-bold leading-tight tracking-[-0.015em] pb-3">Medication</h2>
+                <div class="flex items-center gap-4 rounded-lg bg-[var(--secondary-color)] p-4">
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYJZtc8U33DTwNPUDm-vWkJJuwPP3TqiwO-n41iVwgp0NQj4ROcVWmXW5WgiYlEK3ufiDFONEFqQUUFRjYg8_SyL7_Y-q5w-kDmfdyBDppqaZpW1MlfIlbg9OYH8udrQ12dz6UWVgl3qzOY3PwgspXTLvWITbrQIwRua2U93wGAUd1TBvVM3HbCW4qCeZZnoexqThuFBrgwH8y8bgCzFdyu-_PHIzuN41VCN7DvD0GqRpoaZCXuZIAScmuC29vZu9p1phPZR7B7j8");'></div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-[var(--text-primary)] text-lg font-medium">Aspirin</p>
+                        <p class="text-[var(--text-secondary)] text-sm">20mg</p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5">
+                <h2 class="text-[var(--text-primary)] text-xl font-bold leading-tight tracking-[-0.015em] pb-3">Reminders</h2>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-4 rounded-lg bg-[var(--secondary-color)] p-4 justify-between">
+                        <div class="flex items-center gap-4">
+                            <div class="text-[var(--text-primary)] flex items-center justify-center rounded-lg bg-[#2d445a] shrink-0 size-12">
+                                <span class="material-symbols-outlined text-3xl"> light_mode </span>
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <p class="text-[var(--text-primary)] text-lg font-medium">Morning</p>
+                                <p class="text-[var(--text-secondary)] text-sm">1 pill</p>
+                            </div>
+                        </div>
+                        <div class="shrink-0">
+                            <label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-slate-600 p-0.5 has-[:checked]:bg-[var(--primary-color)]">
+                                <div class="h-full w-[27px] rounded-full bg-white transition-transform duration-300 ease-in-out" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+                                <input checked="" class="peer sr-only" type="checkbox"/>
+                                <div class="absolute inset-0.5 rounded-full transition-transform duration-300 ease-in-out peer-checked:translate-x-[20px]">
+                                    <div class="h-full w-[27px] rounded-full bg-white"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg bg-[var(--secondary-color)] p-4 justify-between">
+                        <div class="flex items-center gap-4">
+                            <div class="text-[var(--text-primary)] flex items-center justify-center rounded-lg bg-[#2d445a] shrink-0 size-12">
+                                <span class="material-symbols-outlined text-3xl"> dark_mode </span>
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <p class="text-[var(--text-primary)] text-lg font-medium">Evening</p>
+                                <p class="text-[var(--text-secondary)] text-sm">1 pill</p>
+                            </div>
+                        </div>
+                        <div class="shrink-0">
+                            <label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-slate-600 p-0.5 has-[:checked]:bg-[var(--primary-color)]">
+                                <div class="h-full w-[27px] rounded-full bg-white transition-transform duration-300 ease-in-out" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+                                <input class="peer sr-only" type="checkbox"/>
+                                <div class="absolute inset-0.5 rounded-full transition-transform duration-300 ease-in-out peer-checked:translate-x-[20px]">
+                                    <div class="h-full w-[27px] rounded-full bg-white"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5">
+                <h2 class="text-[var(--text-primary)] text-xl font-bold leading-tight tracking-[-0.015em] pb-3">Alerts</h2>
+                <div class="space-y-2">
+                    <div class="flex items-center rounded-lg bg-[var(--secondary-color)] p-4 justify-between">
+                        <p class="text-[var(--text-primary)] text-lg">Sound</p>
+                        <button class="flex items-center gap-2 text-[var(--text-secondary)] text-lg">
+                            Default
+                            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+                        </button>
+                    </div>
+                    <div class="flex items-center rounded-lg bg-[var(--secondary-color)] p-4 justify-between">
+                        <p class="text-[var(--text-primary)] text-lg">Vibration</p>
+                        <div class="shrink-0">
+                            <label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-slate-600 p-0.5 has-[:checked]:bg-[var(--primary-color)]">
+                                <div class="h-full w-[27px] rounded-full bg-white transition-transform duration-300 ease-in-out" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+                                <input checked="" class="peer sr-only" type="checkbox"/>
+                                <div class="absolute inset-0.5 rounded-full transition-transform duration-300 ease-in-out peer-checked:translate-x-[20px]">
+                                    <div class="h-full w-[27px] rounded-full bg-white"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="sticky bottom-0 bg-[var(--background-color)]">
+        <div class="px-4 py-3">
+            <button class="w-full rounded-full bg-[var(--primary-color)] py-4 text-center text-lg font-bold text-white">Save</button>
+        </div>
+        <nav class="flex justify-around border-t border-[var(--secondary-color)] bg-[#192633] py-2">
+            <a class="flex flex-col items-center justify-end gap-1 text-[var(--text-secondary)]" href="#">
+                <span class="material-symbols-outlined"> home </span>
+                <p class="text-xs font-medium">Dashboard</p>
+            </a>
+            <a class="flex flex-col items-center justify-end gap-1 rounded-full text-[var(--primary-color)]" href="#">
+                <span class="material-symbols-outlined"> pill </span>
+                <p class="text-xs font-medium">Medications</p>
+            </a>
+            <a class="flex flex-col items-center justify-end gap-1 text-[var(--text-secondary)]" href="#">
+                <span class="material-symbols-outlined"> history </span>
+                <p class="text-xs font-medium">Log History</p>
+            </a>
+            <a class="flex flex-col items-center justify-end gap-1 text-[var(--text-secondary)]" href="#">
+                <span class="material-symbols-outlined"> monitoring </span>
+                <p class="text-xs font-medium">Progress</p>
+            </a>
+            <a class="flex flex-col items-center justify-end gap-1 text-[var(--text-secondary)]" href="#">
+                <span class="material-symbols-outlined"> person </span>
+                <p class="text-xs font-medium">Profile</p>
+            </a>
+        </nav>
+        <div class="h-5 bg-[#192633]"></div>
+    </div>
+</div>
+
+</body></html>

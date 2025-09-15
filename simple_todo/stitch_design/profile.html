@@ -1,0 +1,141 @@
+<html><head>
+    <meta charset="utf-8"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+          --primary-color: #1173d4;
+        }
+    </style>
+    <style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-[#0D151C]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden text-white" style='font-family: Inter, "Noto Sans", sans-serif;'>
+    <div class="flex-grow">
+        <header class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-[#0D151C]/80 backdrop-blur-sm z-10">
+            <button class="flex size-10 items-center justify-center">
+                <span class="material-symbols-outlined text-3xl"> arrow_back_ios_new </span>
+            </button>
+            <h2 class="text-xl font-bold flex-1 text-center pr-10">Profile</h2>
+        </header>
+        <main class="p-4 @container space-y-8">
+            <section class="flex flex-col items-center text-center gap-4">
+                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32 border-2 border-slate-700" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJs9U_5r1zFHw6S4a5j_SsqvDZJM1LHhdb0gYSTFtUT-Yijh5M5DRO5naQClxwvRbs59qY2LXMtEeoJw1H8XUX5GiX6chcgmy_QDa86GScg7vx-BKVhvIRvO29GJOi_gdi3jc8HsbDohhLcDHvMzwW80i2pMsx8UJRmD_9rTRarNp4Z0SKKVt08rjteP-Y5HC42orcy4sN5nH9_hXGKOsLVeriCNtQcBA6RMArUi7nck67egI_wB1-GgtYdlAGnC0t5nkMWiQHhzY");'></div>
+                <div>
+                    <p class="text-2xl font-bold tracking-tight">Ethan Carter</p>
+                    <p class="text-slate-400">ethan.carter@email.com</p>
+                </div>
+            </section>
+            <div class="space-y-6">
+                <section>
+                    <h3 class="text-lg font-bold px-4 pb-2 pt-4 text-slate-300">Account</h3>
+                    <div class="bg-[#1C2938] rounded-xl">
+                        <div class="flex items-center gap-4 px-4 py-3 justify-between border-b border-slate-700/50">
+                            <div class="flex items-center gap-4">
+                                <div class="flex items-center justify-center rounded-lg bg-[#2E4053] shrink-0 size-10">
+                                    <span class="material-symbols-outlined"> notifications </span>
+                                </div>
+                                <p class="font-medium">Notifications</p>
+                            </div>
+                            <div class="shrink-0">
+                                <label class="relative flex h-8 w-14 cursor-pointer items-center rounded-full bg-slate-700 p-1 has-[:checked]:justify-end has-[:checked]:bg-[var(--primary-color)] transition-colors">
+                                    <div class="h-6 w-6 rounded-full bg-white transition-transform" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+                                    <input checked="" class="invisible absolute" type="checkbox"/>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 px-4 py-3 justify-between border-b border-slate-700/50">
+                            <div class="flex items-center gap-4">
+                                <div class="flex items-center justify-center rounded-lg bg-[#2E4053] shrink-0 size-10">
+                                    <span class="material-symbols-outlined"> dark_mode </span>
+                                </div>
+                                <p class="font-medium">Dark Mode</p>
+                            </div>
+                            <div class="shrink-0">
+                                <label class="relative flex h-8 w-14 cursor-pointer items-center rounded-full bg-slate-700 p-1 has-[:checked]:justify-end has-[:checked]:bg-[var(--primary-color)] transition-colors">
+                                    <div class="h-6 w-6 rounded-full bg-white transition-transform" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+                                    <input checked="" class="invisible absolute" type="checkbox"/>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 px-4 py-3 justify-between">
+                            <div class="flex items-center gap-4">
+                                <div class="flex items-center justify-center rounded-lg bg-[#2E4053] shrink-0 size-10">
+                                    <span class="material-symbols-outlined"> language </span>
+                                </div>
+                                <p class="font-medium">Language</p>
+                            </div>
+                            <div class="shrink-0"><p class="text-slate-400">English</p></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="text-lg font-bold px-4 pb-2 pt-4 text-slate-300">Medication</h3>
+                    <div class="bg-[#1C2938] rounded-xl">
+                        <button class="flex items-center gap-4 px-4 py-3 justify-between w-full">
+                            <div class="flex items-center gap-4">
+                                <div class="flex items-center justify-center rounded-lg bg-[#2E4053] shrink-0 size-10">
+                                    <span class="material-symbols-outlined"> pill </span>
+                                </div>
+                                <p class="font-medium">Medication Preferences</p>
+                            </div>
+                            <div class="shrink-0">
+                                <span class="material-symbols-outlined text-slate-500"> chevron_right </span>
+                            </div>
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="text-lg font-bold px-4 pb-2 pt-4 text-slate-300">Data</h3>
+                    <div class="bg-[#1C2938] rounded-xl">
+                        <button class="flex items-center gap-4 px-4 py-3 justify-between w-full">
+                            <div class="flex items-center gap-4">
+                                <div class="flex items-center justify-center rounded-lg bg-[#2E4053] shrink-0 size-10">
+                                    <span class="material-symbols-outlined"> download </span>
+                                </div>
+                                <p class="font-medium">Export Data</p>
+                            </div>
+                            <div class="shrink-0">
+                                <span class="material-symbols-outlined text-slate-500"> chevron_right </span>
+                            </div>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer class="sticky bottom-0">
+        <nav class="flex justify-around border-t border-slate-800 bg-[#1C2938]/90 backdrop-blur-sm py-2">
+            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400" href="#">
+                <span class="material-symbols-outlined">home</span>
+                <p class="text-xs font-medium">Dashboard</p>
+            </a>
+            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400" href="#">
+                <span class="material-symbols-outlined">pill</span>
+                <p class="text-xs font-medium">Medications</p>
+            </a>
+            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400" href="#">
+                <span class="material-symbols-outlined">history</span>
+                <p class="text-xs font-medium">Log History</p>
+            </a>
+            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400" href="#">
+                <span class="material-symbols-outlined">analytics</span>
+                <p class="text-xs font-medium">Progress</p>
+            </a>
+            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-[var(--primary-color)]" href="#">
+                <span class="material-symbols-outlined">person</span>
+                <p class="text-xs font-bold">Profile</p>
+            </a>
+        </nav>
+    </footer>
+</div>
+
+</body></html>
